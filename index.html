@@ -1,4 +1,11 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>myapp</title><link href=static/manifest.json rel=manifest><style>body, html {
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width,initial-scale=1">
+		<title>myapp</title>
+		<link href=static/manifest.json rel=manifest>
+		<style>body, html {
 		        height: 100%;
 		        padding: 0;
 		        margin: 0;
@@ -34,21 +41,15 @@
 		    }
 		    .button:active {
 		        background: #f51210;
-		    }</style><link href=./static/css/app.30790115300ab27614ce176899523b62.css rel=stylesheet></head><body><div id=app></div><div class=content><div class=text>Hello PWA!</div><div class=button id=btn>点击显示横幅</div><script type=text/javascript>if ('serviceWorker' in navigator) {
-			    window.addEventListener('load', function () {
-			        navigator.serviceWorker.register('/static/service-worker.js', {scope: '/static/'})
-			            .then(function (registration) {
-			
-			                // 注册成功
-			                console.log('ServiceWorker registration successful with scope: ', registration);
-			            })
-			            .catch(function (err) {
-			
-			                // 注册失败:(
-			                console.log('ServiceWorker registration failed: ', err);
-			            });
-			    });
-			}</script><script>var dfdPrompt = null;
+		    }</style>
+		<link href=./static/css/app.30790115300ab27614ce176899523b62.css rel=stylesheet>
+	</head>
+	<body>
+		<div id=app></div>
+		<div class=content>
+			<div class=text>Hello PWA!</div>
+			<div class=button id=btn>点击显示横幅</div>
+			<script>var dfdPrompt = null;
 					var button = document.getElementById('btn');
 					window.addEventListener('beforeinstallprompt', function (e) {
 						// 存储事件
@@ -72,4 +73,7 @@
 						// 隐藏按钮
 						button.style.display = 'none';
 						dfdPrompt = null;
-					});</script><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.e3b505c676ec25cc4ca2.js></script><script type=text/javascript src=./static/js/app.20a7ded406a0cd08393d.js></script></div></body></html>
+					});</script>
+			<script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js> </script> <script type=text/javascript
+			 src=./static/js/vendor.e3512d190fe3cebfe12f.js> </script> <script type=text/javascript src=./static/js/app.644d1d00486a08c2e67e.js>
+			 </script> </div> </body> </html>
